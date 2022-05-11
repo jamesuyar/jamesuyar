@@ -1,0 +1,78 @@
+:root {
+    --color-red: rgb(163, 50, 30);
+    --color-grey: rgb(233, 233, 233);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1rem;
+    background-color: var(--color-grey);
+    color: black;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+nav {
+    text-align: center;  
+    background-color: transparent;
+}
+
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--color-red);
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+}
+
+img {
+    max-width: 50%;
+    float: right;
+    border-radius: 50%;
+    outline-style: dotted;
+    outline-offset: 5px;
+    outline-color: var(--color-red);
+    margin: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px var(--color-red);
+}
+
+section {
+    width: 45%;
+    padding-top: 5px;
+    padding-left: 45px;
+    text-align: justify;
+    line-height: 1.4rem;
+}
+
+p a:hover {
+    color: var(--color-red);
+}
+
+footer {
+    clear: both;
+    line-height: 1rem;
+}
+
+footer small, footer a{
+    font-size: .8rem;
+    color: var(--color-red);
+}

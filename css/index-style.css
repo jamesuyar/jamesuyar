@@ -1,0 +1,136 @@
+/* font-family: 'Lato', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+:root {
+    --color-red: rgb(163, 50, 30);
+    --color-grey: rgb(233, 233, 233);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    background-color: var(--color-grey);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+nav {
+    float: left;
+    text-align: center;  
+    background-color: transparent;
+}
+
+nav a {
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;   
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--color-red);
+}
+
+/* had trouble filling in the background color - this worked for me */
+
+.nav li {
+    background-color: transparent; 
+}
+
+.nav a {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.introduction {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+img {
+    max-height: 550px;
+    max-width: fit-content;
+    box-shadow: 0px 0px 7px 6px var(--color-red);
+}
+
+.fade-in{
+    animation: fadeIn 7s;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+h2 {
+    padding-top: 2rem;
+}
+
+h2{
+    font-size: 1.3rem;
+    line-height: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul li {
+    font-size: 1.2rem;
+    list-style: none;
+    padding-left: 2rem;
+    background-color: var(--color-red);
+    text-align: center;
+}
+
+li a {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: var(--color-grey);
+    background-color: var(--color-red);
+}
+
+footer {
+    line-height: 1rem;
+}
+
+footer small, footer a{
+    font-size: .8rem;
+    color: var(--color-red);
+}
+
+.block {
+    clear: both;
+    width: 350px;
+    height: 100px;
+    padding: 50px 40px 0 1px;
+    border-radius: 30%;
+    color: var(--color-grey);
+    background-color: var(--color-red);
+    outline-style: dashed;
+    outline-offset: 8px;
+    outline-color: var(--color-red);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 30px auto;
+}
